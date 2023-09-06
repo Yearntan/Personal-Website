@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Yearn Tan</title>
+  <meta name="author" content="Yearn Tan Yin Tze">
+  <!-- Make website responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body id="home">
+  <header>
+    <!-- Contains name, logo and either head navigation bar/menu dropdown system -->
+    <div class="header-container">
+      <!-- Contains logo -->
+      <div class="nameheader">
+        <img class="logo" alt="panda_logo" src="photos/panda_logo.png" width="100" height="100">
+          YEARNTYT  
+      </div>
+      
+      <!-- Header navigation bar -->
+      <nav class="navibar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="degree_programme.html">Degree programme</a></li>
+          <li><a href="MySkills.html">SGA &amp; mySkills</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+      </nav>
+
+      <!-- Menu dropdown system which will appear when screen is less than 600px -->
+      <nav>
+        <div class="drpdown">
+          <button class="drpbutton">Menu</button>
+          <div class="drpdown-content">
+          <a href="index.html">Home</a>
+          <a href="degree_programme.html">Degree</a>
+          <a href="MySkills.html">SGA &amp; <br> mySkills</a>
+          <a href="quiz.html">Quiz</a>
+          </div>
+        </div>
+      </nav>
+    </div> 
+  </header>
+
+  <!-- Title of each page and background image -->
+  <div>
+    <div class="head_design" style="background-image: url('photos/testing.jpg');"></div>
+    <h1 class="main_word">Testing</h1>
+  </div>
+
+  <main>
+    <section>
+      <div>
+        <h2 class="modules_sentence">Optimisation</h2>
+      </div>
+      <div class="myskillsgrid">
+        <p class="myskills_p">
+          I have implemented and tried several ways to speed up my website speed.<br>
+          Firstly, I have limited the number of images to be used for each page, for instance, a webpage of my website has no more than 4 images, 
+          except degree programme, design and testing pages.<br>
+          Secondly, I have also reduced redirects where each page only has header navigation links, footer links and few external links except for SGA &amp; mySkills, Accessibility and Legal &amp; Security pages.<br>
+          Lastly, I have kept the number of files to the minimum where only one CSS file is used and tried to keep my CSS file small.<br>
+          As a result, my website has loaded faster than it used to be.
+        </p>   
+      </div>
+    </section>
+
+    <section>
+      <article>
+        <div>
+          <h2 class="modules_sentence">CSS &amp; HTML validators</h2>
+          <h3 class="design-subheading">HTML validator</h3>
+        </div>
+        <div>
+          <figure>
+            <img src="photos/HTML_validator.png" alt= "sitemap" width="5000" height="5000">
+          </figure>
+          <div class="designpic" style="background-image: url('photos/HTML_validator.png');"></div>
+          <p class="myskills_p">1. ("\") was used which is wrong, ("/") should be used instead (Error 1 and 2).</p>
+          <p class="myskills_p">2. alt="image information" is added to every pictures after detecting as alt is the alternative texts if image doesn't load. (Error 3)</p>
+          <p class="myskills_p">3. Space between words degree and programme is removed and replaced by "_" as space is not allowed. (Error 4) </p>
+          <p class="myskills_p">4. "&amp" is wrong and it was replaced by "& amp;" (Error 5)</p>
+        
+          <figure>
+            <img src="photos/HTML_validator2.png" alt= "HTML_validator2" width="5000" height="5000">
+          </figure>
+        
+          <p class="myskills_p">5. h2-h6 heading elements are added to other webpages(Warning 6, 7 &amp; 8)</p>
+          
+          <p class="myskills_p">
+            6. <br>
+            One error I got which is not in the picture is align attribute on the img element is obsolete. Use CSS instead. <br>
+            This is because align attribute for img was deprecated in 1998. We should use the float property in CSS to solve this error.
+          </p>
+          <p class="myskills_p">All the other pages have similar errors and problems and they have been solved.</p>
+        </div>
+
+        <div>
+          <div>
+            <figure>
+              <img src="photos/HTML_done.png" alt= "sitemap" width="5000" height="5000">
+            </figure>
+          </div>
+          <div class="designpic" style="background-image: url('photos/HTML_done.png');"></div>
+          <p class="myskills_p">HTML validator after making the relevant changes.</p>
+        </div>
+      </article>
+
+      <article>
+        <h2 class="design-subheading">CSS validator</h2>
+
+        <div>
+          <div>
+            <img src="photos/CSS_validator.png" alt= "sitemap" width="5000" height="5000">
+          </div>
+          <div class="designpic" style="background-image: url('photos/CSS_validator.png');"></div>
+        </div>
+
+        <div>
+          <div>
+            <img src="photos/CSS_validator2.png" alt= "sitemap" width="5000" height="5000">
+          </div>
+          <div class="designpic" style="background-image: url('photos/CSS_validator2.png');"></div>
+          <p class="myskills_p">Font Family names with white spaces should be quoted, for example, Times New Roman is wrong, it should be "Times New Roman" instead.</p>
+          <p class="myskills_p">Typing errors in the property size and display value.</p>
+        </div>
+      </article>
+    </section>
+    <section>
+      <article>
+        <div>
+          <h2 class="modules_sentence">Browser testing</h2>
+        </div>
+
+        <div>
+          <h3 class="design-subheading">Devices larger than 600px</h3>
+          <figure>
+            <img src="photos/homepage600px.png" alt= "sitemap" width="5000" height="5000">
+          </figure>
+          <div class="designpic" style="background-image: url('photos/homepage600px.png');"></div>
+        </div>
+
+        <div>
+          <h4 class="design-subheading">Devices smaller than 600px</h4>
+          <figure>
+            <img src="photos/hpsmall600px.png" alt= "sitemap" width="5000" height="5000">
+          </figure>
+          <div class="designpic" style="background-image: url('photos/hpsmall600px.png');"></div>
+          <figure>
+            <img src="photos/hpsmall600px2.png" alt= "sitemap" width="5000" height="5000">
+          </figure>
+          <div class="designpic" style="background-image: url('photos/hpsmall600px2.png');"></div>
+        </div>
+
+        <div>
+          <h5 class="design-subheading">Devices with 300px</h5>
+          <figure>
+            <img src="photos/hompage300px.png" alt= "sitemap" width="5000" height="5000">
+          </figure>
+          <div class="designpic" style="background-image: url('photos/hompage300px.png');"></div>
+          <p class="myskills_p">
+            You can see the differences between devices with different screen sizes. 
+            Font size is clear enough for all devices and the website is responsive.
+            For more details about the differences across different devices, please see the detail part of design mock-up in <a class="insidelink2" href="Design.html">Design</a>
+          </p>
+        </div>
+      </article>
+
+      <article>
+        <div>
+          <h6 class="design-subheading">Testing on different web browsers</h6>
+          <figure>
+            <img src="photos/browsertest.png" alt= "sitemap" width="5000" height="5000">
+          </figure>
+          <div class="designpic" style="background-image: url('photos/browsertest.png');"></div>
+          <p class="myskills_p">
+            I did tests on these four browsers, the only problem I found was the font size on FireFox was not clear enough.
+            I have increased the font-size so that it will be clearer compared to the one above.
+            Other than this, the website works well on all the different browsers.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section>
+      <div>
+        <h2 class="modules_sentence">Accessibility Test</h2>
+      </div>
+
+      <div>
+        <figure>
+          <img src="photos/WAVE.png" alt= "sitemap" width="5000" height="5000">
+        </figure>
+        <div class="designpic" style="background-image: url('photos/WAVE.png');"></div>
+      </div>
+
+      <div>
+        <div>
+          <figure>
+            <img src="photos/WAVE2.png" alt= "sitemap" width="5000" height="5000">
+          </figure>
+        </div>
+        <div class="designpic" style="background-image: url('photos/WAVE2.png');"></div>
+        <p class="myskills_p">Low contrast problem, what I did was adding darker shadows to the title words and making the font size bigger</p>
+        <p class="myskills_p">Heading alerts are ignored for the homepage as most of the heading alerts are meant to be contents.</p>
+      </div>
+      <div>
+        <div>
+          <figure>
+            <img src="photos/WAVE3.png" alt= "sitemap" width="5000" height="5000">
+          </figure>
+        </div>
+        <div class="designpic" style="background-image: url('photos/WAVE3.png');"></div>
+        <p class="myskills_p">Less alerts!!!</p>
+      </div>
+      <div>
+        <div>
+          <figure>
+            <img src="photos/WAVE4.png" alt= "sitemap" width="5000" height="5000">
+          </figure>
+        </div>
+        <div class="designpic" style="background-image: url('photos/WAVE4.png');"></div>
+        <p class="myskills_p">Heading alerts again. For these, I have added the relevant headings to them</p>
+        <p class="myskills_p">For other pages, the alerts are like which are these heading alerts so I have added all relevant headings to make it more accessible.
+        </p>
+      </div>
+    </section>
+  </main>
+  
+  <footer> 
+    <!-- Footer navigation bar -->
+    <nav class="fnavibar">
+      <ul class="footerul">
+        <li><a href="accessibility.html">Accessibility</a></li>
+        <li><a href="legal_security.html">Legal &amp; Security </a></li>
+        <li><a href="design.html">Design</a></li>
+        <li><a href="testing.html">Testing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="copyright">© Yearn 2022</p>
+    </nav>
+  </footer>
+</body>
+</html>

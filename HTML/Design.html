@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Yearn Tan</title>
+  <meta name="author" content="Yearn Tan Yin Tze">
+  <!-- Make website responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body id="home">
+
+  <header>
+    <!-- Contains name, logo and either head navigation bar/menu dropdown system -->
+    <div class="header-container">
+      <!-- Contains logo -->
+      <div class="nameheader">
+        <img class="logo" alt="panda_logo" src="photos/panda_logo.png" width="100" height="100">
+          YEARNTYT  
+      </div>
+            
+      <!-- Header navigation bar -->
+      <nav class="navibar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="degree_programme.html">Degree programme</a></li>
+          <li><a href="MySkills.html">SGA &amp; mySkills</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Menu dropdown system which will appear when screen is less than 600px -->
+      <nav>
+        <div class="drpdown">
+          <button class="drpbutton">Menu</button>
+          <div class="drpdown-content">
+          <a href="index.html">Home</a>
+          <a href="degree_programme.html">Degree</a>
+          <a href="MySkills.html">SGA &amp; <br> mySkills</a>
+          <a href="quiz.html">Quiz</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Title of each page and background image -->
+  <div>
+    <div class="head_design" style="background-image: url('photos/design2.jpg');"></div>
+    <h1 class="main_word">Design</h1>
+  </div>
+
+  <main>
+    <!-- A section is used for the mobile first section -->
+    <section>
+      <div>
+        <h2 class="modules_sentence">Mobile-First Responsive Web Design</h2>
+      </div>
+
+      <div class="myskillsgrid">
+        <p class="myskills_p">
+          I first designed a mock-up of layout for my mobile interface, example where I want the pictures and contents to be which is presented in the design mockup section below.<br>
+          For example, I added a menu (dropdown) system for mobile phones which will be elaborated in the detail section.<br>
+          After that, I added a breakpoint for desktop devices which will also be elaborated in the detail section.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <h2 class="modules_sentence">Introduction</h2>
+      </div>
+
+      <div class="myskillsgrid">
+        <p class="myskills_p">
+          I have included a logo and my initial at the top left corner of every page. The logo is a panda which was drawn by me.<br>
+          I have also included a copyright in the footer so that people can remember it.<br>
+          I am aiming to create a website that is calming, comfortable to see and yet as aesthetic as possible. That's why I have used the color blue a lot throughout all the webpages
+          (Another reason is because I love blue colour ! 🤣)
+        </p>
+      </div>
+    </section>
+
+    <section>  
+      <h2 class="modules_sentence">Site map</h2>
+      <div>
+        <figure>
+          <img src="photos/sitemap.png" alt= "sitemap" width="2000" height="1000">
+        </figure>
+      </div>
+      <div class="designpic" style="background-image: url('photos/sitemap.png');"></div>   
+      <div>
+        
+        <p class="myskills_p">
+          The site map is straightforward where all pages will have header navigation and footer navigation which brings
+          user to different pages when they click it. Some pages may have one extra navigation link in the main body to bring the user 
+          to the page which is relevant to the content.<br>
+          The website also applies the three-click rule where user can find what they are interested in within three clicks.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div>
+        <h2 class="modules_sentence">Design mock-up</h2>
+      </div>
+      
+      <div>
+        <h3 class="design-subheading">For mobile phones</h3>
+        <figure>
+          <img src="photos/Phone-mockup.PNG" alt= "Phone-mockup" width="2000" height="1000">
+        </figure>
+        <div class="designpic" style="background-image: url('photos/Phone-mockup.PNG');"></div>
+      </div>
+
+      <div>
+        <h4 class="design-subheading">For desktops</h4>
+        <figure>
+          <img src="photos/Desktop-mockup.PNG" alt= "Desktop-mockup" width="2000" height="1000">
+        </figure>
+        <div class="designpic" style="background-image: url('photos/Desktop-mockup.PNG');"></div>
+      </div>
+
+      <div class="myskillsgrid">
+        <h5 class="design-subheading">Details</h5>
+        <p class="myskills_p">
+          I have used 1 breakpoint and 1 tweak point:<br>
+          <span class="specialword">Breakpoint</span>: @media screen and (min-width: 600px)<br>
+          I wish to have the same layout and design for mobile devices with 600px as mobile devices with 300px so only one breakpoint is applied.<br>
+          600px was chosen because when the screen gets smaller than 600px, fonts will be too small for users to see so I wish to fix the font-size for 
+          devices which are less than 600px. <br>
+          For mobile devices, pictures in homepage, contact page and degree programme will be below texts rather than aside with texts.<br>
+          The 2 rows and 2 columns of content of the homepage will become 1 row and 4 columns in desktop devices.<br>
+          Words will be different at breakpoints. For mobile devices, words is fixed at 18px, h1 is 50px, h2 is 28px and h3-h6 are 24px.<br>
+          For desktop devices (above 600px), words will get bigger as resolution increases as viewport width is used.<br>
+          The margin-left of footer bar will be different as well which is margin-left: 0% for mobile devices and 5% for desktop devices.<br>
+          A menu (dropdown) system will be present in mobile devices where lists of header navigation will drop down when users hover over it and 
+          the menu system will become normal navigation bar in desktop devices which I did not use any of the examples given 
+          in the assignment instructions.<br>
+        </p>
+        <p class="myskills_p">
+          <span class="specialword">Tweak point</span>: @media screen and (max-width: 500px) is for form where words will stack over input column and submit button will cover the whole row.<br>
+          This is because when the screen gets to 500px, labels and input areas will be too close together which is not that good to look at.
+          The rest of the web pages will be similar (SGA &amp; mySkills, Picture quiz, Accessibility, Legal &amp; Security, Design, Testing).
+        </p>     
+      </div>
+    </section>
+  </main>
+  
+  <footer> 
+    <!-- Footer navigation bar -->
+    <nav class="fnavibar">
+      <ul class="footerul">
+        <li><a href="accessibility.html">Accessibility</a></li>
+        <li><a href="legal_security.html">Legal &amp; Security </a></li>
+        <li><a href="design.html">Design</a></li>
+        <li><a href="testing.html">Testing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="copyright">© Yearn 2022</p>
+    </nav>
+  </footer>
+</body>
+</html>

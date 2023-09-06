@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Yearn Tan</title>
+  <meta name="author" content="Yearn Tan Yin Tze">
+  <!-- Make website responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body id="home">
+
+  <header>
+    <!-- Contains name, logo and either head navigation bar/menu dropdown system -->
+    <div class="header-container">
+      <!-- Contains logo -->
+      <div class="nameheader">
+      <img class="logo" alt="panda_logo" src="photos/panda_logo.png" width="100" height="100">
+        YEARNTYT  
+      </div>
+      
+      <!-- Header navigation bar -->
+      <nav class="navibar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="degree_programme.html">Degree programme</a></li>
+          <li><a href="MySkills.html">SGA &amp; mySkills</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Menu dropdown system which will appear when screen is less than 600px -->
+      <nav>
+        <div class="drpdown">
+          <button class="drpbutton">Menu</button>
+          <div class="drpdown-content">
+          <a href="index.html">Home</a>
+          <a href="degree_programme.html">Degree</a>
+          <a href="MySkills.html">SGA &amp; <br> mySkills</a>
+          <a href="quiz.html">Quiz</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+  </header>
+
+  <!-- Title of each page and background image -->
+  <div>
+    <div class="head_design" style="background-image: url('photos/quiz.jpg');"></div>
+    <h1 class="main_word">QUIZ</h1>
+  </div>
+
+  <main>
+    <section>
+      <h2>
+        It's quiz time!!! <br>
+        Hover over the picture to see the answers <br>
+        Make sure you don't cheat ! 🤣
+      </h2>
+      <div>
+        <div class="quizgrid">
+          <!-- img-wrapper to show texts when hover over -->
+          <!-- Image blur and content fade in -->
+          <figure>
+            <div class="imgwrap">
+              <img class="blur" alt="Malaysia" src="photos/malaysia.jpg" width="500" height="500">
+              <div class="content fade">It is Malaysia!</div>
+            </div>
+          </figure>
+        </div>
+
+        <!-- Radio button for users to choose their answer -->
+        <div class="button1">
+          <h3>Where am I from?</h3>
+          <input type="radio" id="country1" name="aboutme" value="Malaysia">
+          <label for="country1">Malaysia</label><br>
+          <input type="radio" id="country2" name="aboutme" value="Thailand">
+          <label for="country2">Thailand</label><br>
+          <input type="radio" id="country3" name="about_me" value="China">
+          <label for="country3">China</label>
+        </div>
+    
+        <div class="quizgrid">
+          <figure>
+            <div class="imgwrap">
+              <img class="zoom" alt="Dog" src="photos/dog.jpg" width="500" height="500">
+              <div class="content fade">Dogs is the correct answer!</div>
+            </div>
+          </figure>
+        </div>
+
+        <div class="button2">
+          <h4>Which of the following is my favourite pet?</h4>
+          <input type="radio" id="pet1" name="animals" value="dogs">
+          <label for="pet1">Dogs</label><br>
+          <input type="radio" id="pet2" name="animals" value="cats">
+          <label for="pet2">Cats</label><br>
+          <input type="radio" id="pet3" name="animals" value="birds">
+          <label for="pet3">Birds</label>
+        </div>
+
+        <div class="quizgrid">
+          <figure>
+            <div class="imgwrap">
+              <img class="blur" alt="Travelling" src="photos/travel.jpg" width="500" height="500">
+              <div class="content fade">Travelling! Pretty obvious, right?!</div>
+            </div>
+          </figure>
+        </div>
+
+        <div class="button3">
+          <h5>Which of the following is my hobby?</h5>
+          <input type="radio" id="travel" name="Hobbies" value="travel">
+          <label for="travel">Travelling</label><br>
+          <input type="radio" id="gaming" name="Hobbies" value="gaming">
+          <label for="gaming">Playing Games</label><br>
+          <input type="radio" id="jogging" name="Hobbies" value="jogging">
+          <label for="jogging">Jogging</label>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <p class="quiz_sentence">
+        Check the <a class="insidelink2" href="index.html">Home</a> if you got anything wrong!
+      </p>
+    </section>
+  </main>
+  
+  <footer> 
+    <!-- Footer navigation bar -->
+    <nav class="fnavibar">
+      <ul class="footerul">
+        <li><a href="accessibility.html">Accessibility</a></li>
+        <li><a href="legal_security.html">Legal &amp; Security </a></li>
+        <li><a href="design.html">Design</a></li>
+        <li><a href="testing.html">Testing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="copyright">© Yearn 2022</p>
+    </nav>
+  </footer>
+</body>
+</html>
+

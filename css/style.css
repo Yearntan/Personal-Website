@@ -1,0 +1,1063 @@
+/* Yearn Tan Yin Tze COM1008 WEB Assignment */
+* {
+  box-sizing: border-box;
+}
+
+/* Common attributes */
+main {
+  padding: 3% 3% 0% 3%; 
+  background-color: #1c2642; 
+  margin-bottom: 0%;
+}
+
+body { 
+  margin: 0;
+  padding: 0;
+  color: rgb(0, 0, 0); 
+  font-family: Gabriola, Helvetica, sans-serif, serif;
+  line-height: 140%;  /* 1.4 times current font-size */
+  min-width: 320px;
+  text-align: left;
+  background-color: #ffffff;
+  font-size: 18px;
+}
+
+div {
+  position: relative;
+  margin: 0;
+  left: 0px;
+  right: 0px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: bottom;
+  max-width: 100%;
+  background-color: #ffffff; 
+}  
+
+article {
+  margin-top: 2%;
+}
+
+p {
+  margin:0;
+  font-family: Gabriola, serif, sans-serif; 
+  font-size: 18px;
+  line-height: 100%;
+  margin-top: 1%
+}
+
+ol{
+  margin: 2%;
+}
+
+.specialword {
+  color: rgb(170, 21, 21);
+  font-weight: bolder;
+}
+/* End of common attributes */
+
+/* Start of header */
+/* Header */
+header {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Times New Roman", Papyrus, serif;
+  background-size: contain; 
+}
+
+/* This contains logo and header navigation bar */
+.header-container {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0%;
+}
+
+.logo {
+  /* To display logo in line with navigation bar and name header */
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+.nameheader {
+  color: #00004d;
+  font-family: "Times New Roman", Papyrus, serif;
+  background-size: contain;
+  font-size: 32px;
+  background-color: #ffffff;
+  align-items: center;
+  /* Animation fade in in 3s */
+  animation: fadeIn 3s;
+}
+
+  /* Header menu (dropdown) system for mobile devices */
+.navibar {
+  /* Menu is present until 600px so the navigation bar should be absent until 600px */
+  display: none;
+}
+
+.drpbutton {
+  background-color: #080836;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 14px;
+  /* Allow users to see if it's clickable */
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 20%;
+}
+
+.drpdown {
+  position: relative;
+  display: inline-block;
+}
+
+.drpdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e4f1f7;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  /* sets z-order of a positioned element and its flex items. */
+  z-index: 1;
+}
+
+.drpdown-content a {
+  color: black;
+  padding: 3% 4% 3% 0%;
+  text-decoration: none;
+  display: block;
+}
+
+.drpdown-content a:hover {
+  background-color: #b5faff;
+  font-weight: bolder;
+}
+
+.drpdown:hover .drpdown-content {
+  display: block;
+}
+
+.drpdown:hover .drpbutton {
+  background-color: #28c6ff;
+  color: #000000;
+  /* Effect when user hovers over dropdown links */
+  transition: ease-in-out 0.5s;
+  font-weight: bolder;
+  
+}
+/* End of menu system */
+/* End of header */
+
+/* Start of Footer */
+footer {
+  font-size: 2vw;
+  text-align: center;
+  border-top: 0px solid gray;
+  padding: 0%;
+  width: 100%
+}
+
+/* Footer navigation bar */
+footer li {
+  margin-left: 0%;
+}
+
+.footerul {
+  margin:0%;
+}
+
+.fnavibar {
+  background-color: #000000;
+}
+
+.fnavibar li{ 
+ display: inline-block;
+}
+
+.fnavibar a {
+  color: #00004d;
+  text-decoration: none;
+  font-size: 16px;
+  padding-right: 15px;
+  font-weight: bolder;
+}
+ 
+.fnavibar a:link { color: #e7e9f0; }
+ 
+.fnavibar a:visited { color: #a1bce7; }
+ 
+.fnavibar a:hover { 
+ color: #ffcd59;
+ font-size:large;
+}
+
+.copyright {
+  color: white;
+  margin-top: 0%;
+}
+/* End of footer navigation bar */
+/* End of footer */
+
+/* Headings' designs */
+h1 {
+  margin: 0;
+  text-align: left;
+  line-height: 2;
+  opacity: 1;
+  background-color: #c8d5e7;
+}
+
+h2 {
+  color: #fefefe;
+  text-align: center;
+  background-color:#535f80;
+  margin: 0% 0% 2% 0%;
+  padding: 1%;
+  font-size: 28px;
+}
+
+h3 {
+  color: #fefefe;
+  text-align: center;
+  background-color:#535f80;
+  margin: 0%;
+  padding: 1%;
+  font-size: 24px;
+}
+
+h4 {
+  color: #fefefe;
+  text-align: center;
+  background-color:#535f80;
+  margin: 0%;
+  padding: 1%;
+  font-size: 24px;
+}
+
+h5 {
+  color: #fefefe;
+  text-align: center;
+  background-color:#535f80;
+  margin: 0%;
+  padding: 1%;
+  font-size: 24px;
+}
+
+h6 {
+  color: #fefefe;
+  text-align: center;
+  background-color:#535f80;
+  margin: 0%;
+  padding: 1%;
+  font-size: 24px;
+}
+/* End of headings */
+
+/* Main background images & words inside it */
+.main_word {
+  color: #ffffff;
+  font-weight: bold;
+  /* To fix word at certain position */
+  position: absolute;
+  inset: 0;
+  font-size: 45px;
+  padding: 1rem;
+  background:none ;
+  display: flex;
+  /* To align objects center */
+  justify-content: center;
+  align-items: center;
+  /* Text shadow design- layering shadow to make glowing effect */
+  text-shadow: 
+  0 0 20px #1d3436, 0 0 30px #7dcdd3,
+  0 0 40px #44f3ff,0 0 50px #b9eaf0;
+  /* Fade in effect fot the titles */
+  animation: fadeIn 3s;
+}
+
+/* @keyframes control intermediate steps in CSS animation */
+@keyframes fadeIn {
+  /* Text becomes fully visible after 2s */
+  0% {opacity: 0;}
+  100%{opacity: 1;}  
+}
+
+.head_design {
+  /* Blur image by 1.5px */
+  filter: blur(1.5px);
+  padding-left: 7%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  block-size: 500px;
+  /* Hide all overflow elements */
+  overflow: hidden;
+  border: #02187950;
+  border-width: 2px;
+  border-style:inset;
+}
+/* End */
+
+/* Design, animation of images throughout the website */
+.grid { 
+  display:grid;
+  /* To make grid with 2 columns */
+  grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+  flex-direction: column;
+  border-radius: 50%;
+  border-width: 5vw;
+  background-color: #535f80;
+  margin: 0% 4% 0% 5%;
+}
+
+figure{
+  margin:0
+}
+
+img {
+  float: right;
+  max-width: 100%;
+  height: auto;
+}
+
+.imgwrap {
+  /* all children inside in right position */
+  /* overflow is hidden to hide overflow  */
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  margin: 0%;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0.5%;
+}
+
+/* block-dont need extra sizing easier */
+.imgwrap > img {
+  display: block;
+  width: 100%;
+  /* Make sure grid and image get 50% of content */
+  aspect-ratio: 1 / 1;
+  /* Make sure image fit correctly */
+  object-fit: cover;
+  /* focus on center */
+  object-position: center;
+}
+
+.imgwrap > .content {
+  color: #0a0a13;
+  font-weight: bolder;
+  position: absolute;
+  /* inside container */
+  inset: 0;
+  font-size: 4vw;
+  padding: 1rem;
+  background:#ffffff ;
+  opacity: 100%;
+  /* center contents  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Both image and content transition timing need to be same */
+.imgwrap > img,
+.imgwrap > .content {
+  transition: 300ms ease-in-out;
+}
+
+/* effect (blurring) to image when hover */
+.imgwrap:hover > img.blur {
+  filter: blur(6px);
+}
+
+/* effect (zoom) to image when hover by 20%*/
+.imgwrap:hover > img.zoom {
+  transform: scale(1.2);
+}
+
+/* effects (fading) to image when hover */
+/* When not hover, content won't show */
+.imgwrap > .content.fade {
+  opacity: 0;
+}
+
+.imgwrap:hover > .content.fade {
+  opacity: 0.6;
+}
+
+ /* Slide right, left, up and down animation */
+ /* When not hover, text is all the way at the left */
+.imgwrap > .content.slideleft {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+  
+.imgwrap:hover > .content.slideleft {
+  transform: translateX(0%);
+  opacity: 0.8;
+}
+
+/* slide right */
+.imgwrap > .content.slideright {
+  transform: translateX(100%);
+  opacity: 0;
+}
+    
+.imgwrap:hover > .content.slideright {
+  transform: translateX(0%);
+  opacity: 0.8;
+}
+
+/* slide down */
+.imgwrap > .content.slidedown{
+  transform: translateY(-100%);
+  opacity: 0;
+}
+      
+.imgwrap:hover > .content.slidedown {
+  transform: translateY(0%);
+  opacity: 0.8;
+}
+
+/* slide up */
+.imgwrap > .content.slideup {
+  transform: translateY(100%);
+  opacity: 0;
+}
+        
+.imgwrap:hover > .content.slideup {
+  transform: translateY(0%);
+  opacity: 0.8;
+}
+/* End of images' designs and animations */
+
+/* Link inside page */
+/* Link for dark background */
+.insidelink {
+  position: relative;
+  font-weight: bold;
+}
+
+/* Before hover */
+.insidelink::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #86FF70;
+  bottom: 0;
+  left: 0;
+  /* This sets the origin of element transformation*/
+  transform-origin: right;
+  /* transformation that resizes an element along the x-axis. */
+  transform: scaleX(0);
+  /* Transform lasts 3s, ease in and out */
+  transition: transform .3s ease-in-out;
+}
+
+.insidelink:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.insidelink :active {
+  color: #fff;
+}
+
+.insidelink:visited {
+  color: #5cc7c7;
+}
+
+/* link for light background */
+.insidelink2{
+  position: relative;
+  font-weight: bold;
+}
+
+/* dark line appears from left to right when users hover */
+.insidelink2::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: #121e5c;
+  bottom: 0;
+  left: 0;
+  /* This sets the origin of element transformation*/
+  transform-origin: right;
+  /* transformation that resizes an element along the x-axis. */
+  transform: scaleX(0);
+  /* Transform lasts 3s, ease in and out */
+  transition: transform .3s ease-in-out;
+  }
+
+.insidelink2:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.insidelink2 :active {
+  color: rgb(11, 10, 75);
+}
+
+.insidelink2:visited {
+  color: #178acc;
+}
+/* End design of links inside page  */
+
+/* Hompage (index.html) design  */
+.homecontent {
+  margin: 0% 5% 0% 5%;
+}
+
+.grid-contents1 {
+  display: flex;
+  text-align: center;
+  margin: 1.5% 0% 1.5% 0%;
+  column-gap: 1.5%;
+  background-color: #00004d;
+}
+
+.grid-contents2 {
+  display: flex;
+  text-align: center;
+  background-color: #00004d;
+  margin-bottom: 1.5%;
+  column-gap: 1.5%;
+}
+
+.boxes {
+  column-gap: 5%;
+  border-color: #00004d;
+  flex: 0%;
+}
+
+/* Content only shows in desktop devices */
+.grid-contents-desktop {
+  display: none;
+}
+
+.homecontent2 {
+  margin: 0%;
+  padding: 2% 2% 0% 4%;
+}
+
+.homecontent3 {
+  margin: 0%;
+  padding: 0% 2% 2% 4%;
+}
+/* END OF HOMEPAGE (INDEX) */
+
+/* Modules PAGE */
+/* Each Module Heading Title design */
+.modules1_heading {
+  font-weight: bolder;
+  font-size: 24px;
+  /*
+  Create gradient colour that mimics a progress bar.
+  Until the end the whole bar will be green as user finishes reading until the last module  
+  */
+  background-image: linear-gradient(to right, #005249  5% , #070f25 50%);
+  color: #EAE7DC;
+  padding: 2%;
+  text-align: left;
+}
+
+.modules2_heading {
+  font-weight: bolder;
+  font-size: 24px;
+  background-image: linear-gradient(to right, #005249 25%, #070f25 57%);
+  color: #EAE7DC;
+  padding: 2%;
+  text-align: left;
+}
+
+.modules3_heading {
+  font-weight: bolder;
+  font-size: 24px;
+  background-image: linear-gradient(to right, #005249 37.5%, #070f25 64%);
+  color: #EAE7DC;
+  padding: 2%;
+  text-align: left;
+}
+
+.modules4_heading {
+  font-weight: bolder;
+  font-size: 24px;
+  background-image: linear-gradient(to right, #005249 50%, #070f25 71%);
+  color: #EAE7DC;
+  padding: 2%;
+  text-align: left;
+}
+
+.modules5_heading {
+  font-weight: bolder;
+  font-size: 24px;
+  background-image: linear-gradient(to right, #005249 62.5%, #070f25 79%);
+  color: #EAE7DC;
+  padding: 2%;
+  text-align: left;
+}
+
+.modules6_heading {
+  font-weight: bolder;
+  font-size: 24px;
+  background-image: linear-gradient(to right, #005249 75%, #070f25 86%);
+  color: #EAE7DC;
+  padding: 2%;
+  text-align: left;
+}
+
+.modules7_heading {
+  font-weight: bolder;
+  font-size: 24px;
+  background-image: linear-gradient(to right, #005249 87.5%, #070f25 93%);
+  color: #EAE7DC;
+  padding: 2%;
+  text-align: left;
+}
+
+.modules8_heading {
+  font-weight: bolder;
+  font-size: 24px;
+  background-image: linear-gradient(to right, #005249 100%, #004e92);
+  color: #EAE7DC;
+  padding: 2%;
+  text-align: left;
+}
+/* End of headings for module page */
+
+.modules_sentence {
+  font-weight: bolder;
+  background-image: linear-gradient(to right, #070f25, #005249 50% , #070f25);
+  color: #EAE7DC;
+  padding: 2%;
+  text-align: center;
+}
+
+.grid_container_mod {
+  display: grid;
+  margin: 0;
+  background-color: #e7e9f0;
+  padding: 10px;
+}
+
+.modules_p {
+  margin: auto 2% auto 6%;
+  background-color: #e7e9f0;
+}
+/* End of modules' page */
+
+/* SGA & mySkills page */
+.SGAheading {
+  color: #fefefe;
+  text-align: center;
+  background-color:#535f80;
+  margin: 0%;
+  padding: 1%;
+  font-size: 35px;
+}
+
+.myskillsgrid {
+  display: grid;
+  flex-basis: 100%;
+}
+
+.myskills_p {
+  margin: 0% 4% 0% 4%;
+  padding-top: 2%;
+  font-family: Gabriola, serif, sans-serif;
+  font-size: 18px;
+}
+
+.myskills_design {
+  padding-left: 7%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  block-size: 500px;
+  overflow: hidden;
+  border: #02187950;
+  border-width: 2px;
+  border-style:inset;
+  animation: fadeIn 5s;
+}
+/* END of SGA & mySkills page */
+
+/* Picture quiz designs */
+.quizgrid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+  margin: 0;
+  flex-direction: column;
+  margin: 0%;
+  border-radius: 50%;
+  border-width: 5vw;
+  background-color: #ffffff;
+  margin: 0% 4% 0% 5%;
+}
+
+.quiz_sentence {
+  font-weight: bolder;
+  font-size: 24px;
+  background-image: linear-gradient(to right, #070f25, #84ecf0 50%, #070f25);
+  color: #081230;
+  padding: 2%;
+  text-align: center;
+}
+
+/* quiz radio buttons design */
+.button1 {
+  text-align: center;
+  margin: 2% 0% 2% 0%;
+  /* Design of gradient bars which contains the answers */
+  background-image: linear-gradient(to right, #69acb8, #ffffff 50%, #69acb8);
+}
+
+.button2 {
+  text-align: center;
+  background-image: linear-gradient(to right, #b3d7cb, #ffffff 50%, #b3d7cb);
+  margin: 2% 0% 2% 0%;
+}
+
+.button3 {
+  text-align: center;
+  background-image: linear-gradient(to right, #69acb8, #ffffff 50%, #69acb8);
+  margin: 2% 0% 2% 0%;
+}
+/* END of picture quiz */
+
+/* Accessibility page */
+.citation {
+  margin-left: 8%;
+}
+/* End of accessibility page */
+
+/* Legal & security page */
+.formal_p {
+  margin: 0% 4% 1% 4%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  line-height: 120%;
+}
+
+ol {
+  margin: 0% 2% 2% 0%;
+}
+
+.legal_li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0% 2% 0% 2%;
+  line-height: 140%;
+  font-size: 1.5vw;
+}
+/* End of legal & security page */
+
+/* Design page */
+.designpic {
+  padding: 0% 40% 0% 40%;
+  background-size: cover;
+  background-position: center center;
+  /* Background-image that will not scroll with the page */
+  background-attachment: fixed;
+  height: auto;
+  display: flex;
+  block-size: 00px;
+  overflow: auto;
+  border-width: 2px;
+  border-style:inset;
+  animation: fadeIn 5s;
+}
+
+/* This is also for Testing page */
+.design-subheading {
+  font-weight: lighter;
+  /* Gradient of colour */
+  background-image: linear-gradient(to right, #9bb6ff, #9dfff4 50% , #9bb6ff);
+  color: #000000;
+  padding: 0.5% 0% 0.5% 0%;
+  margin: 0;
+  text-align: center;
+}
+/* End of design page */
+
+/* Media query for devices with width greater than 600px */
+@media screen and (min-width: 600px) {
+  
+  h2 {
+    font-size: 5vw !important;
+  }
+
+  h3, h4, h5, h6 {
+    font-size: 4vw !important;
+  }
+
+  body { 
+    font-size: 3vw !important;
+  }
+
+  p {
+    margin: 1% 0px 0px;
+    font-size: 3vw !important;
+  }
+
+  /* Word besides logo */
+  .nameheader {
+    font-size: 2.5vw !important;
+  }
+
+  .main_word {
+    font-size: 11vw !important;
+    }
+
+  /* Menu dropdown system disappears from 600px */
+  .drpdown .drpbutton {
+    display: none;
+  }
+
+  /* Header navigation bar occurs from 600px */
+  .navibar {
+    display: block;
+    right: 0%;
+    line-height: 0;
+  }
+
+  li {
+    font-size: 3vw;
+  }
+
+  .navibar li {
+    display: inline-block;
+  }
+   
+  .navibar a {
+    color: #00004d;
+    text-decoration: none;
+    font-size: 2.5vw !important;
+    padding-right: 5px;
+    font-weight: 700;
+    font-family: "Times New Roman", Times, serif, Helvetica, sans-serif;
+  }
+   
+  ul {
+    padding: 0% 0% 0% 0%;
+    display: block;
+  }
+   
+  .navibar a:link { color: #091b50; }
+    
+  .navibar a:visited { color: #72aabb; }
+    
+  .navibar a:hover { 
+    color: #2d3927;
+    font-size:large;
+  }
+  /* End of header navigation bar */
+
+  /* Footer navigation bars */
+  .fnavibar a {
+    font-size: 3vw !important ;
+  }
+
+  footer li {
+    margin-left: 5%;
+  }
+  /* End of footer navigation */
+
+  .grid {
+    display: flex;
+    margin: 0;
+    padding: 10px;
+  }
+
+  /* Homepage (INDEX) page */
+  .grid_container {
+    display: grid;
+    /* Create 2 colums and each cover half of the grid */
+    grid-template-columns:repeat(2, 1fr);
+    grid-gap: 2em;
+    margin: 0;
+    background-color: #ffffff;
+    padding: 10px;
+  }
+
+  /* Contents should be disappear for devices larger than 600px - the 2 rows 2 columns*/
+  .grid-contents1 {
+    display: none !important;
+  }
+
+  .grid-contents2 {
+    display: none !important;
+  }
+
+  /* This content should appear for devices larger than 600px- the 1 row 4 columns */
+  .grid-contents-desktop {
+    display: flex;
+    text-align: center;
+    background-color: #00004d;
+  }
+
+  .boxes {
+    background-color: #fff;
+    margin: 1.5% 1.5% 1.5% 0%;
+  }
+
+  /* top right bottom left */
+  .homecontent {
+    margin: auto 2% auto 6%;
+  }
+  
+  /* End of homepage (INDEX) page */
+
+  /* Modules' page */
+  .grid_container_mod {
+    display: grid;
+    /* grid-template-columns:repeat(2, 1fr); */
+    grid-template-columns:repeat(2, 1fr);
+    grid-gap: 2em;
+    margin: 0;
+    background-color: #ffffff;
+    padding: 10px;
+    grid-auto-rows: minmax(100px,auto);
+    grid-auto-columns: minmax(100px,auto);
+  }
+
+  .modules1_heading ,.modules2_heading, .modules3_heading,
+  .modules4_heading , .modules5_heading, .modules6_heading,
+  .modules7_heading, .modules8_heading {
+    font-size: 4vw !important;
+  }
+
+  .modules_p {
+    background-color: #ffffff;
+  }
+  /* End of Modules' page */
+
+  /* mySkills page */
+  .myskills_p {
+    font-size: 3vw !important;
+  }
+
+  /* Legal & Security page */
+  .formal_p {
+    font-size: 1.5vw !important;
+  }
+
+  /* Contact page */
+  label {
+    font-family: Gabriola, serif, sans-serif;
+    font-size: 2.5vw !important;
+  }
+}
+/* END of MEDIA QUERY */
+
+/* Contact page */
+.contact_p {
+  margin: 4% 2% auto 6%;
+  text-align: left;
+  background-color: #ffffff;
+}
+
+/* Contact form */
+input,
+textarea {
+  flex: 1;
+  padding: 3px 5px;
+}
+
+/* contact page grid */
+.contact_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+}
+
+/* Form design */
+form {
+  background-color: #1d2a3b;
+  margin: 0%;
+  max-width: 100%;
+  padding: 2%;
+}
+
+/* Style inputs, select elements and textareas */
+input[type=text], textarea {
+  width: 100%;
+  font-size: 2vw;
+  padding: 12px;
+  /* border colour,size and type */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  /* Allows user to resize the comment column. */
+  resize: vertical;
+}
+
+/* Style the label next to the inputs texts */
+label {
+  padding: 2% 2% 2% 0;
+  display: inline-block;
+  font-family: Gabriola, serif, sans-serif;
+  font-size: 18px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #091142;
+  color: white;
+  padding: 1%;
+  border: none;
+  border-radius: 5%;
+  /* To let user knows it's clickable */
+  cursor: pointer;
+  float: right;
+}
+
+/* Transition of submit button (ease-in-out) and changes of styles of submit button when user hovers over */
+input[type=submit]:hover {
+  background-color: #88dfff;
+  color: #000000;
+  /* Ease in out transition of button of colour */
+  transition: ease-in-out 0.5s;
+  font-size: x-large;
+  /* Word becomes bold */
+  font-weight: bold;
+}
+
+/* Floating column for labels: 25% width */
+.labelrow {
+  float: left;
+  width: 25%;
+  margin-top: 3%;
+}
+
+/* Floating column for inputs: 75% width */
+.inputrow {
+  float: left;
+  width: 75%;
+  margin-top: 3%;
+}
+
+/* Clear floats after the columns */
+/* ::after creates a pseudo-element that is the last child of the selected element. 
+It is inline by default. */
+.inputs-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 
+Responsive layout - when the screen is less than 500px wide, the two columns stack on top of each other 
+instead of besides each other and submit button covers the whole row
+*/
+@media screen and (max-width: 500px) {
+  .inputrow, .labelrow, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}

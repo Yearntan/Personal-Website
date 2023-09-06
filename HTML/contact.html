@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Yearn Tan</title>
+  <meta name="author" content="Yearn Tan Yin Tze">
+  <!-- Make website responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body id="home">
+  <header>
+    <!-- Contains name, logo and either head navigation bar/menu dropdown system -->
+    <div class="header-container">
+      <!-- Contains logo -->
+      <div class="nameheader">
+      <img class="logo" alt="panda_logo" src="photos/panda_logo.png" width="100" height="100">
+      YEARNTYT  
+      </div>
+      
+      <!-- Header navigation bar -->
+      <nav class="navibar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="degree_programme.html">Degree programme</a></li>
+          <li><a href="MySkills.html">SGA &amp; mySkills</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Menu dropdown system which will appear when screen is less than 600px -->
+      <nav>
+        <div class="drpdown">
+          <button class="drpbutton">Menu</button>
+          <div class="drpdown-content">
+          <a href="index.html">Home</a>
+          <a href="degree_programme.html">Degree</a>
+          <a href="MySkills.html">SGA &amp; <br> mySkills</a>
+          <a href="quiz.html">Quiz</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Title of each page and background image -->
+  <div>
+    <div class="head_design" style="background-image: url('photos/contactus.jpg');"></div>
+    <h1 class="main_word">Contact us</h1>
+  </div>
+
+  <main>
+    <section>
+      <div class="grid_container">
+        <div class="grid">
+          <!-- Need to hide and show one grid inside a grid -->
+          <!-- imgwrap contains the image -->
+          <div class="imgwrap">
+            <img class="blur" alt="diamond" src="photos/Diamond.jpg" width="10" height="10">
+            <!-- Image blur and content fade in -->
+            <div class="content fade">The diamond</div>
+          </div>
+        </div>
+
+        <div class="homecontent">
+          <h2>Address</h2>
+          <p class="contact_p">
+            You can contact the Department of Computer Science at the following address:
+          </p> 
+          <p class="contact_p">
+            The Univeristy of Sheffield <br>
+            Reagent Court<br>
+            211 Portobello<br> 
+            Sheffield <br>
+            S1 4DP <br>
+            UK
+          </p>
+        </div>
+      </div>
+
+      <div class="grid_container">
+
+        <div class="homecontent">
+          <h3>Thank you</h3>
+          <p class="contact_p">
+            Hope you like my website ! 
+          </p> 
+          <p class="contact_p">
+            Feel free to leave me any comment or any question you might have! <br>
+            If you wish to have your questions answered, please put in your name and email address so that I can get back to you.<br>
+            If you have any question about the data collection. Remember to fill the form below too!<br>
+          </p>
+        </div>
+        
+        <div class="grid">
+          <div class="imgwrap">
+            <img class="blur" alt="diamond" src="photos/thank_you.jpg" width="10" height="10">
+            <div class="content fade">Thank YOU!!!</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- This is the form. -->
+    <form>
+      <div class="inputs-container">
+        <div class="labelrow">
+          <label for="name">Full name</label>
+        </div>
+        <div class="inputrow">
+          <input type="text" id="name" name="username" placeholder="Type your name..., it's ok to stay anonymous." >
+        </div>
+      </div>
+      <div class="inputs-container">
+        <div class="labelrow">
+          <label for="email">Email address</label>
+        </div>
+        <div class="inputrow">
+          <input type="text" id="email" name="email" placeholder="Enter your email adress..." required>
+        </div>
+      </div>
+      <div class="inputs-container">
+        <div class="labelrow">
+          <label for="comments">Comments</label>
+        </div>
+        <div class="inputrow">
+          <textarea id="comments" name="comments" placeholder="Leave your comments..., please type something here." style="height:150px" required></textarea>
+        </div>
+      </div>
+      <div class="inputs-container">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </main>
+  
+  <footer> 
+    <!-- Footer navigation bar -->
+    <nav class="fnavibar">
+      <ul class="footerul">
+        <li><a href="accessibility.html">Accessibility</a></li>
+        <li><a href="legal_security.html">Legal &amp; Security </a></li>
+        <li><a href="design.html">Design</a></li>
+        <li><a href="testing.html">Testing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p class="copyright">© Yearn 2022</p>
+    </nav>
+  </footer>
+</body>
+</html>
+
